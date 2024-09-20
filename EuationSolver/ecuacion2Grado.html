@@ -1,21 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="ecuacion2Grado.js"></script>
-    <title>Ecuation solver</title>
+    <title>Bar El Cid</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>2ºEcuation solver</h1>
-    <p>Give the value from</p>
-    <input type="text" id="a" placeholder="a">
-    <input type="text" id="b" placeholder="b">
-    <input type="text" id="c" placeholder="c">
-    <br>
-    <button onclick= "ecuationSolver()">Calculate</button>
-    <p id="solution1"></p>
-    <p id="solution2"></p>
+
+    <!-- Encabezado y barra de navegación -->
+    <header>
+        <div class="container">
+            <h1>El Cid</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Bienvenida con animación -->
+    <section id="inicio" class="welcome-section">
+        <div class="overlay">
+            <div class="container">
+                <h2 class="animate-welcome">Bienvenidos a El Cid</h2>
+                <p>El mejor lugar para disfrutar de buenos momentos, deliciosas bebidas y un ambiente único.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Menú -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Menú</h2>
+            <div class="menu-categories">
+                <div class="menu-column">
+                    <h3>Bebidas</h3>
+                    <ul>
+                        <li>Cerveza artesanal - $50</li>
+                        <li>Cócteles - $90</li>
+                        <li>Vino tinto - $80</li>
+                        <li>Refrescos - $30</li>
+                    </ul>
+                </div>
+                <div class="menu-column">
+                    <h3>Entradas</h3>
+                    <ul>
+                        <li>Tapas mixtas - $12</li>
+                        <li>Queso frito - $10</li>
+                        <li>Aceitunas - $7</li>
+                        <li>Papas bravas - $6</li>
+                    </ul>
+                </div>
+                <div class="menu-column">
+                    <h3>Platos principales</h3>
+                    <ul>
+                        <li>Paella - $20</li>
+                        <li>Hamburguesa gourmet - $25</li>
+                        <li>Pollo asado - $18</li>
+                        <li>Ensalada César - $13</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en el corazón de la ciudad, en José María Salaberría Kalea, 39, 20010 Donostia, Gipuzkoa ¡Visítanos ya!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.616645874863!2d-1.9748681244785084!3d43.30889837913613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b2351a1418f3%3A0x723a0d7e59a6e74!2sJos%C3%A9%20Mar%C3%ADa%20Salaberr%C3%ADa%20Kalea%2C%2039%2C%2020010%20Donostia%2C%20Gipuzkoa!5e0!3m2!1ses!2ses!4v1695248788767!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Teléfono: <a href="tel:+34646013110">+34 646013110</a></p>
+            <p>Correo: <a href="mailto:contacto@elcid.com">contacto@elcid.com</a></p>
+            <p>Síguenos en: 
+                <a href="https://www.facebook.com/people/Bar-El-Cid/100057278057219/">Facebook</a> | 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bar El Cid. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
